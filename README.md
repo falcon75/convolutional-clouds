@@ -8,14 +8,14 @@ Initially I tried convolving per colour channel, it didn't work well but the res
 
 [per channel convolution](video/channels.mp4)
 
-https://github.com/falcon75/convolutional-clouds/assets/39418626/d3bf745c-e374-4f92-93f6-2e17c4e01558
+https://github.com/falcon75/convolutional-clouds/assets/39418626/e99fd995-e106-481b-95e1-291faed5e518
 
 
 In a standard convolution, each output is a summation of convolutions of each input channel, so they're coupled and the model uses colour much more sensibly.
 
 [standard convolution](video/conv.mp4)
 
-https://github.com/falcon75/convolutional-clouds/assets/39418626/9783fc02-19b4-40b8-8d8f-31771edebc08
+https://github.com/falcon75/convolutional-clouds/assets/39418626/88b86608-50da-41f1-a2a6-8741103ae08d
 
 ## Ideas
 
