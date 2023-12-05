@@ -23,7 +23,7 @@ Not a terrible result! Some of the weaknesses here are that edges aren't consist
 
 This model creates a kind of image pyramid, downsampling the frame then subtracting from the original, applying a 5x5 convolutions to each level, then combining the levels. This should enable the model to learn larger scale patterns, essentially a bigger receptive field but with less parameters and less computation. This is for 2 levels, no special revelations here:
 
-
+https://github.com/falcon75/convolutional-clouds/assets/39418626/9cbb2bb7-23cb-46e7-837c-0e09dff59dce
 
 ## Ideas
 
