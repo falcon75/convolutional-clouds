@@ -19,8 +19,18 @@ https://github.com/falcon75/convolutional-clouds/assets/39418626/88b86608-50da-4
 
 Not a terrible result! Some of the weaknesses here are that edges aren't consistent, see the tree line, and perspective seems to disappear when the model takes over, it starts looking very flat. Both of these make sense with the convolutional model, its difficult to imagine how it could capture these patterns.
 
+### Hierarchical Convolution
+
+This model creates a kind of image pyramid, downsampling the frame then subtracting from the original, applying a 5x5 convolutions to each level, then combining the levels. This should enable the model to learn larger scale patterns, essentially a bigger receptive field but with less parameters and less computation. This is for 2 levels, no special revelations here:
+
+
+
 ## Ideas
 
-Hierachical convolutions model splits frame into image pyramid, applies 5x5 convolutions to each level, then combines the levels. This should enable the model to learn larger scale patterns, essentially a bigger receptive field but with less parameters and less computation.
-
+### Experiments
 Downsample frame rate, then fill in the gaps witht his model and compare to dumber interpolation alternatives.
+
+### Model Improvements
+- Recurrent connections, from previous frames.
+- Multiple kernels to capture different modes of motion.
+- More layers of the CNN architecture.
